@@ -1,0 +1,43 @@
+# --- Identity ---
+id: "b700d0f2-ad46-4287-b9b9-e1366f4dd57a"
+name: "book-summary-pipeline"
+display_name: "Book Summary Pipeline"
+description: "Turn any book or PDF into a structured summary with key ideas, chapter breakdowns, and critical analysis"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+# --- Attribution ---
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+
+licence: "MIT"
+repository: "https://github.com/skrpts/book-summary-pipeline"
+
+# --- Discovery (Hub) ---
+category: "student"
+tags:
+  - "book-summary"
+  - "reading"
+  - "study"
+  - "pdf"
+  - "academic"
+  - "notes"
+
+# --- Security & Access ---
+requires:
+  services:
+    - "llm-service"
+  permissions: []
+  data_handling: []
+
+# --- Contents ---
+contents:
+  skills: 2
+  prompts: 3
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 1
+  total: 10
