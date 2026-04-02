@@ -19,6 +19,18 @@ connections:
     type: runs_on
   - target: effective-summarisation-guide
     type: references
+  - target: citation-extraction
+    type: uses
+  - target: plan-studies
+    type: uses
+  - target: take-notes
+    type: uses
+  - target: critical-thinking-framework
+    type: references
+  - target: summary-guide
+    type: references
+  - target: summary-output-template
+    type: references
 ---
 
 ## Overview
