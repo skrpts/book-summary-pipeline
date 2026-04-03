@@ -21,8 +21,6 @@ connections:
     type: references
   - target: citation-extraction
     type: uses
-  - target: plan-studies
-    type: uses
   - target: take-notes
     type: uses
   - target: critical-thinking-framework
