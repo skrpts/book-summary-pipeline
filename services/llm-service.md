@@ -2,22 +2,30 @@
 type: service
 id: llm-service
 title: LLM Service
-description: "AI language model provider for text analysis and summary generation"
-tags: [Production]
+description: "Language model service for analysis, synthesis, and document generation"
+tags: [Production, Tested]
 connections: []
+metadata:
+  serviceType: llm
+  auth_type: api_key
 ---
 
-## Service
+## LLM Service
 
-Provides access to a large language model for all text analysis, extraction, and synthesis tasks in the pipeline.
+This skrpt uses a language model for analytical and generative tasks. The LLM handles structured analysis, content synthesis, document generation, and quality validation across each stage of the workflow.
 
-## Configuration
+### Usage Pattern
 
-Connect this node to your preferred AI provider in the skrptiq app settings. Any capable language model will work. For longer books, a provider with a large context window (100k+ tokens) will produce better results during the synthesis stage.
+The LLM is invoked at each stage of the pipeline. Earlier stages produce structured analysis (frameworks, assessments, breakdowns), while later stages synthesise outputs into coherent documents. The final stage is typically the most token-intensive, requiring cross-referencing across all previous outputs.
 
-## Supported Providers
+### Configuration
 
-- Anthropic Claude
-- OpenAI GPT-4
-- Google Gemini
-- Any OpenAI-compatible API
+- **Temperature:** 0.3 for structured analysis tasks, 0.5 for narrative and synthesis tasks
+- **Max tokens:** 4,000 per invocation, 8,000–10,000 for final assembly stages
+- **Context window:** Each stage receives the outputs of all previous stages. The assembly stage requires the full context window.
+
+### Requirements
+
+- A configured LLM provider in skrptiq settings
+- Sufficient token quota for the full pipeline
+- No external network access required beyond your AI provider's endpoint

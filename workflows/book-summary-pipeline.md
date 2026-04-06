@@ -9,19 +9,11 @@ connections:
     type: uses
   - target: summary-synthesis
     type: uses
-  - target: extract-key-ideas
-    type: uses
-  - target: summarise-chapter
-    type: uses
-  - target: compile-summary
-    type: uses
   - target: llm-service
     type: runs_on
   - target: effective-summarisation-guide
     type: references
   - target: citation-extraction
-    type: uses
-  - target: take-notes
     type: uses
   - target: critical-thinking-framework
     type: references
