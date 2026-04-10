@@ -3,7 +3,7 @@ id: "b700d0f2-ad46-4287-b9b9-e1366f4dd57a"
 name: "book-summary-pipeline"
 display_name: "Book Summary Pipeline"
 description: "Turn any book or PDF into a structured summary with key ideas, chapter breakdowns, and critical analysis"
-version: "1.1.1"
+version: "1.1.2"
 engine: ">=1.0.0"
 
 # --- Attribution ---
@@ -34,10 +34,10 @@ requires:
 # --- Contents ---
 contents:
   skills: 4
-  prompts: 4
+  prompts: 5
   workflows: 1
   services: 1
   sources: 2
   documents: 1
   assets: 1
-  total: 14
+  total: 15
