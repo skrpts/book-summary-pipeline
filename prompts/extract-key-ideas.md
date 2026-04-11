@@ -4,6 +4,31 @@ id: extract-key-ideas
 title: Extract Key Ideas
 description: "Identifies the central arguments, evidence, and terminology from raw book text"
 tags: [Production, Academic, Reading]
+inputs:
+  book_title:
+    label: "Book Title"
+    description: "The title of the book"
+    example: "Thinking, Fast and Slow"
+    required: true
+    type: text
+  book_author:
+    label: "Book Author"
+    description: "The author of the book"
+    example: "Daniel Kahneman"
+    required: true
+    type: text
+  subject_area:
+    label: "Subject Area"
+    description: "The academic discipline or field of study"
+    example: "Political Science"
+    required: true
+    type: text
+  section_label:
+    label: "Section Label"
+    description: "The section name or label"
+    example: "Literature Review"
+    required: true
+    type: text
 connections:
   - target: content-extraction
     type: derived_from

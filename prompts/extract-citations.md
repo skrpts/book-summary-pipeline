@@ -4,6 +4,13 @@ id: extract-citations
 title: "Extract Citations"
 description: "Identifies and formats citations from text into a consistent style"
 tags: [Production, Academic]
+inputs:
+  citation_style:
+    label: "Citation Style"
+    description: "The academic citation format to use"
+    example: "APA 7th Edition"
+    required: true
+    type: text
 connections:
   - target: citation-extraction
     type: derived_from

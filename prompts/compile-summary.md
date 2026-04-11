@@ -4,6 +4,37 @@ id: compile-summary
 title: Compile Summary
 description: "Assembles chapter summaries into a complete book summary with thematic analysis and critical evaluation"
 tags: [Production, Academic, Writing]
+inputs:
+  book_title:
+    label: "Book Title"
+    description: "The title of the book"
+    example: "Thinking, Fast and Slow"
+    required: true
+    type: text
+  book_author:
+    label: "Book Author"
+    description: "The author of the book"
+    example: "Daniel Kahneman"
+    required: true
+    type: text
+  subject_area:
+    label: "Subject Area"
+    description: "The academic discipline or field of study"
+    example: "Political Science"
+    required: true
+    type: text
+  summary_depth:
+    label: "Summary Depth"
+    description: "How detailed the summary should be"
+    example: "Chapter-by-chapter with key arguments and evidence"
+    required: true
+    type: text
+  focus_areas:
+    label: "Focus Areas"
+    description: "Areas to focus on"
+    example: "Performance optimisation, user onboarding, API stability"
+    required: true
+    type: text
 connections:
   - target: summary-synthesis
     type: derived_from

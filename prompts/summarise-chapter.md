@@ -4,6 +4,37 @@ id: summarise-chapter
 title: Summarise Chapter
 description: "Produces a structured summary of a single chapter with key ideas, terms, and connections"
 tags: [Production, Academic, Learning]
+inputs:
+  book_title:
+    label: "Book Title"
+    description: "The title of the book"
+    example: "Thinking, Fast and Slow"
+    required: true
+    type: text
+  book_author:
+    label: "Book Author"
+    description: "The author of the book"
+    example: "Daniel Kahneman"
+    required: true
+    type: text
+  chapter_title:
+    label: "Chapter Title"
+    description: "The title of the chapter or section"
+    example: "Chapter 5: Memory and Learning"
+    required: true
+    type: text
+  subject_area:
+    label: "Subject Area"
+    description: "The academic discipline or field of study"
+    example: "Political Science"
+    required: true
+    type: text
+  focus_areas:
+    label: "Focus Areas"
+    description: "Areas to focus on"
+    example: "Performance optimisation, user onboarding, API stability"
+    required: true
+    type: text
 connections:
   - target: content-extraction
     type: derived_from
