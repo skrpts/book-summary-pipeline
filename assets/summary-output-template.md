@@ -3,7 +3,7 @@ type: asset
 id: summary-output-template
 title: Summary Output Template
 description: "Template structure for the final book summary output"
-tags: [Production]
+tags: [Production, Academic, Template]
 connections:
   - target: compile-summary
     type: references
