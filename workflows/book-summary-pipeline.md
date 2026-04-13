@@ -25,10 +25,8 @@ execution:
   - skill: "content-extraction"
     step_type: "synthesis"
   - skill: "summary-synthesis"
-    input_from: "content-extraction"
     step_type: "synthesis"
   - skill: "citation-extraction"
-    input_from: "summary-synthesis"
     step_type: "synthesis"
 ---
 
