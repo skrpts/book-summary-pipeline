@@ -21,6 +21,11 @@ connections:
     type: references
   - target: summary-output-template
     type: references
+output_step: "summary-synthesis"
+composite_steps:
+  - "content-extraction"
+  - "summary-synthesis"
+  - "citation-extraction"
 execution:
   - skill: "content-extraction"
     step_type: "synthesis"
