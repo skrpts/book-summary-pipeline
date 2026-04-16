@@ -9,6 +9,8 @@ connections:
     type: uses
   - target: summary-synthesis
     type: uses
+  - target: language-polish
+    type: uses
   - target: llm-service
     type: runs_on
   - target: effective-summarisation-guide
@@ -21,11 +23,12 @@ connections:
     type: references
   - target: summary-output-template
     type: references
-output_step: "summary-synthesis"
+output_step: "language-polish"
 composite_steps:
   - "content-extraction"
   - "summary-synthesis"
   - "citation-extraction"
+  - "language-polish"
 execution:
   - skill: "content-extraction"
     step_type: "synthesis"
@@ -35,6 +38,8 @@ execution:
     step_type: "synthesis"
     context:
       citation_style: "Harvard"
+  - skill: "language-polish"
+    step_type: "content"
 ---
 
 ## Overview
