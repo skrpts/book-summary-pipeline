@@ -33,6 +33,8 @@ execution:
     step_type: "synthesis"
   - skill: "citation-extraction"
     step_type: "synthesis"
+    context:
+      citation_style: "Harvard"
 ---
 
 ## Overview
