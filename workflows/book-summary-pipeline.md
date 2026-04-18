@@ -32,6 +32,7 @@ composite_steps:
 execution:
   - skill: "content-extraction"
     step_type: "synthesis"
+    prompt: "extract-key-ideas"
   - skill: "summary-synthesis"
     step_type: "synthesis"
   - skill: "citation-extraction"
