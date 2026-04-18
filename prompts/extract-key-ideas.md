@@ -26,9 +26,16 @@ inputs:
   section_label:
     label: "Section Label"
     description: "The section name or label"
-    example: "Literature Review"
+    example: "Chapter 1 — The Characters of the Story"
     required: true
     type: text
+  book_text:
+    label: "Book Text"
+    description: "The book text or chapter to analyse — paste the content or upload a file"
+    example: "Paste the chapter text here"
+    required: true
+    type: file
+    accept: ".pdf,.txt,.md,.docx"
 connections:
   - target: content-extraction
     type: derived_from
@@ -46,7 +53,13 @@ You are an academic reading assistant. Analyse the following book text and extra
 **Subject area:** {{input.subject_area}}
 **Section:** {{input.section_label}}
 
-Extract the following from this text:
+### Text to Analyse
+
+{{input.book_text}}
+
+### Instructions
+
+Extract the following from the text above:
 
 1. **Central argument(s):** What is the author claiming or asserting in this section? State each argument clearly in one sentence.
 
