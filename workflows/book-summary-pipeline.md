@@ -34,12 +34,15 @@ execution:
     step_type: "synthesis"
     prompt: "extract-key-ideas"
   - skill: "summary-synthesis"
+    prompt: "compile-summary"
     step_type: "synthesis"
   - skill: "citation-extraction"
+    prompt: "extract-citations"
     step_type: "synthesis"
     context:
       citation_style: "Harvard"
   - skill: "language-polish"
+    prompt: "polish-language"
     step_type: "content"
 ---
 
