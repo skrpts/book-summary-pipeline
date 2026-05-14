@@ -53,7 +53,11 @@ You are an academic reading assistant. Compile the following chapter summaries i
 **Summary depth:** {{input.summary_depth}}
 **Focus areas:** {{input.focus_areas}}
 
-Using the chapter summaries provided below, produce a book summary with these sections:
+### Chapter Summaries
+
+{{steps.previous.output}}
+
+Using the chapter summaries provided above, produce a book summary with these sections:
 
 ### Book Overview
 - Title, author, publication year (if known), genre/field
