@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.25
+GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 12 inline shared-content files and declare 12 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Internal slug references rewritten for E2 rename/mirror-drop pair(s): summary-synthesis→synthesise-book-summary. Closes pre-Step-3 inline-vendoring for this bundle.
+
 ## v1.1.24
 Wave 2: re-signed with canonical engine signing pipeline.
 

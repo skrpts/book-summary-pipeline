@@ -7,7 +7,7 @@ tags: [Production, Academic, Learning, Reading]
 connections:
   - target: content-extraction
     type: uses
-  - target: summary-synthesis
+  - target: synthesise-book-summary
     type: uses
   - target: language-polish
     type: uses
@@ -26,14 +26,14 @@ connections:
 output_step: "language-polish"
 composite_steps:
   - "content-extraction"
-  - "summary-synthesis"
+  - "synthesise-book-summary"
   - "citation-extraction"
   - "language-polish"
 execution:
   - skill: "content-extraction"
     step_type: "synthesis"
     prompt: "extract-key-ideas"
-  - skill: "summary-synthesis"
+  - skill: "synthesise-book-summary"
     prompt: "compile-summary"
     step_type: "synthesis"
   - skill: "citation-extraction"
@@ -75,7 +75,7 @@ Each chapter or major section is processed individually using the **summarise-ch
 
 ### Stage 3: Full Summary Synthesis
 
-The **summary-synthesis** skill takes all chapter summaries and compiles them into a cohesive document using the **compile-summary** prompt. The final output includes:
+The **synthesise-book-summary** skill takes all chapter summaries and compiles them into a cohesive document using the **compile-summary** prompt. The final output includes:
 
 - Book metadata (title, author, genre, publication year)
 - A one-page executive summary

@@ -36,7 +36,7 @@ inputs:
     required: true
     type: text
 connections:
-  - target: summary-synthesis
+  - target: synthesise-book-summary
     type: derived_from
 ---
 
