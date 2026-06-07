@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.26
+Fix-forward after Row 3b v1.1.25 publish failure. The v1.1.25 per-skrpt CI's "Register version with Hub API" step failed because the consumer's source `manifest.id` (b700d0f2…) did not match the D1 catalogue row's id (3afa2e9c…) — a legacy drift from before Action 6 (`0bcc5ae0`) made publish-skrpt.mjs Step 2 INSERT use `manifest.id` for the D1 id column. v1.1.26 reconciles the source `manifest.id` to the catalogue authoritative value (Row-5-equivalent for consumers) and republishes. Per Adj-1: no re-tag of v1.1.25; the orphaned GitHub release artefact stays inert (no D1 versions row, no consumer pinned it).
+
 ## v1.1.25
 GH#645 Row 3b — migrate to K-037 dep-referenced schema. Strip 12 inline shared-content files and declare 12 hub-shared deps (UUID id + slug name + version + checksum from `gen-dep-checksums.mjs`). Internal slug references rewritten for E2 rename/mirror-drop pair(s): summary-synthesis→synthesise-book-summary. Closes pre-Step-3 inline-vendoring for this bundle.
 
