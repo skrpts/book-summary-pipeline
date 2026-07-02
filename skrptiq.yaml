@@ -3,7 +3,7 @@ id: "3afa2e9c-840d-44b3-a72d-846f92dfc523"
 name: "book-summary-pipeline"
 display_name: "Book Summary Pipeline"
 description: "Turn any book or PDF into a structured summary with key ideas, chapter breakdowns, and critical analysis"
-version: "1.1.26"
+version: "1.1.27"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -91,3 +91,17 @@ contents:
   documents: 1
   assets: 1
   total: 8
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-02T20:18:53.331Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/book-summary-pipeline/security"

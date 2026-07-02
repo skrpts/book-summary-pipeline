@@ -33,17 +33,21 @@ execution:
   - skill: "content-extraction"
     step_type: "synthesis"
     prompt: "extract-key-ideas"
+    output: { name: "key_ideas", type: "list" }
   - skill: "synthesise-book-summary"
     prompt: "compile-summary"
     step_type: "synthesis"
+    output: { name: "summary", type: "text" }
   - skill: "citation-extraction"
     prompt: "extract-citations"
     step_type: "synthesis"
+    output: { name: "citations", type: "list" }
     context:
       citation_style: "Harvard"
   - skill: "language-polish"
     prompt: "polish-language"
     step_type: "content"
+    output: { name: "polished_summary", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
