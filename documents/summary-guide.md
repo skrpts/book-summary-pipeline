@@ -17,7 +17,7 @@ The pipeline accepts book content as plain text. How you provide it depends on y
 
 **PDF:** Use your PDF reader's "Select All" and copy, or use a PDF-to-text tool. Most modern PDFs copy cleanly. If the PDF is a scanned image, run OCR first (your operating system's built-in tools or a free service like Adobe's online OCR).
 
-**EPUB/MOBI:** Open in Calibre or your preferred ebook reader, select all text, and copy. Alternatively, convert to PDF first.
+**EPUB/MOBI:** Open in Caliber or your preferred ebook reader, select all text, and copy. Alternatively, convert to PDF first.
 
 **Physical book:** Use a scanning app on your phone (e.g. Adobe Scan, Microsoft Lens) to capture pages, then OCR the result.
 

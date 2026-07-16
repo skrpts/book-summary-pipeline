@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Analyses raw book text — whether pasted in full, uploaded as a PDF, or provided chapter by chapter — and produces a structured representation of the book's organisation. This gives downstream skills a reliable map of the content.
+Analyzes raw book text — whether pasted in full, uploaded as a PDF, or provided chapter by chapter — and produces a structured representation of the book's organization. This gives downstream skills a reliable map of the content.
 
 ## Processing Approach
 
@@ -24,7 +24,7 @@ Analyses raw book text — whether pasted in full, uploaded as a PDF, or provide
 
 1. Identify chapter boundaries from headings, numbering, or formatting cues
 2. Detect sub-sections within each chapter
-3. Recognise front matter (preface, introduction, foreword) and back matter (appendices, bibliography, index)
+3. Recognize front matter (preface, introduction, foreword) and back matter (appendices, bibliography, index)
 4. Flag any epigraphs, pull quotes, or sidebars
 
 ### Content Chunking
@@ -47,9 +47,9 @@ Produces a JSON-like outline:
 
 ## When to Use
 
-- Before any summarisation step, to establish the book's skeleton
+- Before any summarization step, to establish the book's skeleton
 - When processing a long PDF that needs to be chunked for a smaller context window
-- When you have the full text and need to identify which parts are worth summarising in depth
+- When you have the full text and need to identify which parts are worth summarizing in depth
 
 ## Constraints
 

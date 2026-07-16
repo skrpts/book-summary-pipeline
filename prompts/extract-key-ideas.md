@@ -31,7 +31,7 @@ inputs:
     type: text
   book_text:
     label: "Book Text"
-    description: "The book text or chapter to analyse — paste the content or upload a file"
+    description: "The book text or chapter to analyze — paste the content or upload a file"
     example: "Paste the chapter text here"
     required: true
     type: file
@@ -47,13 +47,13 @@ The first analytical prompt in the pipeline. Applied to the raw text (or a chunk
 
 ## Prompt
 
-You are an academic reading assistant. Analyse the following book text and extract its key components.
+You are an academic reading assistant. Analyze the following book text and extract its key components.
 
 **Book:** {{input.book_title}} by {{input.book_author}}
 **Subject area:** {{input.subject_area}}
 **Section:** {{input.section_label}}
 
-### Text to Analyse
+### Text to Analyze
 
 {{input.book_text}}
 

@@ -67,7 +67,7 @@ The **content-extraction** skill processes the raw input and identifies the book
 
 For longer books, this stage chunks the content into manageable sections while preserving chapter boundaries.
 
-### Stage 2: Chapter-Level Summarisation
+### Stage 2: Chapter-Level Summarization
 
 Each chapter or major section is processed individually using the **summarise-chapter** prompt. This produces:
 
@@ -97,7 +97,7 @@ The **synthesise-book-summary** skill takes all chapter summaries and compiles t
 | `input.book_author` | string | Yes | Author of the book |
 | `input.subject_area` | string | No | Academic subject for contextual analysis (e.g. "Psychology", "History") |
 | `input.summary_depth` | string | No | Level of detail: "brief", "standard", or "detailed" (default: "standard") |
-| `input.focus_areas` | string | No | Specific themes or topics to prioritise in the summary |
+| `input.focus_areas` | string | No | Specific themes or topics to prioritize in the summary |
 
 ## Outputs
 

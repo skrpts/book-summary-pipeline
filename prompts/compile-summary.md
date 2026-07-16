@@ -32,7 +32,7 @@ inputs:
   focus_areas:
     label: "Focus Areas"
     description: "Areas to focus on"
-    example: "Performance optimisation, user onboarding, API stability"
+    example: "Performance optimization, user onboarding, API stability"
     required: true
     type: text
 connections:
@@ -81,10 +81,10 @@ Identify 3–5 themes that run across multiple chapters. For each theme:
 - **Strengths:** What does the book do well? Where is the evidence strongest?
 - **Weaknesses:** Where are the arguments thin, the evidence weak, or the logic questionable?
 - **Gaps:** What does the book not address that a critical reader should notice?
-- **Context:** How does this book sit within its field? Does it challenge, extend, or summarise existing thinking?
+- **Context:** How does this book sit within its field? Does it challenge, extend, or summarize existing thinking?
 
 ### Key Takeaways
-Write 5–10 bullet points summarising the most important things a student should remember from this book. These should be useful for exam revision or essay writing.
+Write 5–10 bullet points summarizing the most important things a student should remember from this book. These should be useful for exam revision or essay writing.
 
 ### Glossary
 List the most important specialist terms from across the book with their definitions.
